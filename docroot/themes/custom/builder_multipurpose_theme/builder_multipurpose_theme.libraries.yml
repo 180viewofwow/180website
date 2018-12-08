@@ -1,0 +1,72 @@
+bootstrap:
+  version: 1.x
+  css:
+    theme:
+      includes/bootstrap/css/bootstrap.min.css: {}
+      includes/bootstrap/css/docs.min.css: {}
+  js:
+    includes/bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+global-components:
+  Version: 1.x
+  css:
+    theme:
+      css/sm-core-css.min.css: {}
+      css/base.css: {}
+      css/font-awesome.css: {}
+      css/custom-style.css: {}
+      css/custom-media.css: {}
+  js:  
+    js/jquery.smartmenus.min.js: {}
+    js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+colorbox:
+  version: 1.x
+  css:
+    theme:
+      includes/colorbox/colorbox.css: {}
+  js:
+    includes/colorbox/jquery.colorbox-min.js: {}
+  dependencies:
+    - core/jquery
+
+owl:
+  version: 1.x
+  css:
+    theme:
+      includes/owl/assets/owl.carousel.min.css: {}
+      includes/owl/assets/owl.theme.default.min.css: {}
+  js:
+    includes/owl/owl.carousel.min.js: {}
+  dependencies:
+    - core/jquery
+
+quicksand:
+  version: 1.x
+  js:
+    includes/quicksand/jquery.easing.1.3.js: {}
+    includes/quicksand/jquery.quicksand.js: {}
+  dependencies:
+    - core/jquery
+
+flexslider:
+  version: 1.x
+  css:
+    theme:
+      includes/flexslider/flexslider.css: {}
+  js:
+    includes/flexslider/jquery.flexslider-min.js: {}
+  dependencies:
+    - core/jquery

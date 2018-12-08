@@ -1,6 +1,37 @@
 <?php
 
-// @codingStandardsIgnoreFile
+/* @codingStandardsIgnoreFile
+
+ * Database settings:
+ *
+ * The $databases array specifies the database connection or
+ * connections that Drupal may use.  Drupal is able to connect
+ * to multiple databases, including multiple types of databases,
+ * during the same request.
+ *
+ * One example of the simplest connection array is shown below. To use the
+ * sample settings, copy and uncomment the code below between the @code and
+ * @endcode lines and paste it after the $databases declaration. You will need
+ * to replace the database username and password and possibly the host and port
+ * with the appropriate credentials for your database system.
+ *
+ * The next section describes how to customize the $databases array for more
+ * specific needs.
+ *
+ * @code
+ **/
+
+ $databases['default']['default'] = array (
+    'database' => 'wowsitedev',
+    'username' => 'drupaluser',
+    'password' => '',
+    'host' => 'localhost',
+    'port' => '33067',
+    'driver' => 'mysql',
+    'prefix' => '',
+    'collation' => 'utf8mb4_general_ci',
+  );
+ /**@endcode
 
 /**
  * @file
@@ -38,7 +69,7 @@ assert_options(ASSERT_ACTIVE, TRUE);
 /**
  * Enable local development services.
  */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/development.services.yml';
 
 /**
  * Show all error messages, with backtrace information.
@@ -116,7 +147,7 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+$settings['rebuild_access'] = FALSE;
 
 /**
  * Skip file system permissions hardening.
@@ -129,3 +160,18 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
+require_once DRUPAL_ROOT . '/modules/contrib/devel/kint/kint/Kint.class.php';Kint:$maxlevels = 3;
+
+// On Acquia Cloud, this include file configures Drupal to use the correct
+// database in each site environment (Dev, Stage, or Prod). To use this
+// settings.php for development on your local workstation, set $db_url
+// (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/wowsitedev/wowsitedev-settings.inc');
+}
+
+//$config_directories['sync'] = 'sites/default/files/config_6b4245e98dca68fe4fa2f0773ee12efcf1deabdd/sync';
+$settings['trusted_host_patterns'] = [
+  '^wowsitedev\-dev\.dd$'
+];
+

@@ -1,0 +1,42 @@
+name: Builder MultiPurpose Theme
+type: theme
+description: 'Designed & Developed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for any kind of Drupal Service <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>'
+package: core
+core: 8.x
+
+#Libraries
+libraries:
+  - builder_multipurpose_theme/bootstrap
+  - builder_multipurpose_theme/colorbox
+  - builder_multipurpose_theme/owl
+  - builder_multipurpose_theme/quicksand
+  - builder_multipurpose_theme/flexslider
+  - builder_multipurpose_theme/global-components
+
+#Regions
+regions:
+  header: 'Header'
+  search: 'Search'
+  primary_menu: 'Primary Menu'
+  usermenu: 'User Menu'
+  search: 'Search'
+  homepagemessage: 'Home Page Message' 
+  projects: 'Projects'
+  services: 'Services'
+  highlighted: 'Highlighted' 
+  page_title: 'Page Title'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  testimonials: 'Testimonials' 
+  ourteam: 'Our Team' 
+  bottom_first: 'Bottom First Widget'
+  bottom_second: 'Bottom Second Widget'
+  bottom_third: 'Bottom Third Widget'
+  bottom_forth: 'Bottom Forth Widget'
+  footer_first: 'Footer First Widget'
+  footer_second: 'Footer Second Widget'
+  footer_third: 'Footer Third Widget'
+  footer_menu: 'Footer Menu'
+  auto_hidden_block: 'Auto hidden blocks'
