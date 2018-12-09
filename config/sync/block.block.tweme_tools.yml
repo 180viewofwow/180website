@@ -1,0 +1,26 @@
+uuid: c4ccffa0-eae1-4b08-a784-4b7bc57ed266
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - tweme
+_core:
+  default_config_hash: ephRr0LkMKMgTXGVHgO_oPMhFLmps1p1tBt1lE_C5-g
+id: tweme_tools
+theme: tweme
+region: footer
+weight: 1
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

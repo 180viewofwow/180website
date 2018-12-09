@@ -1,0 +1,13 @@
+uuid: 1d7dd88c-b1ed-4854-be1c-df921947c625
+langcode: en
+status: true
+dependencies: {  }
+id: weekly_schedule
+label: 'Weekly Schedule'
+enabled: true
+keep: 6
+period: 604800
+cron: null
+source_id: entire_site
+destination_id: icloud_weekly
+settings_profile_id: null

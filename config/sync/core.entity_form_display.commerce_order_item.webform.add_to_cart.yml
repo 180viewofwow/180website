@@ -1,0 +1,32 @@
+uuid: d46d0abb-3ade-43f5-b3a3-c9f2c2bf56d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.webform
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+_core:
+  default_config_hash: oAKEe6TPr-6MLHeJ894wWeS6HJDkty_KQU263lw81Fg
+id: commerce_order_item.webform.add_to_cart
+targetEntityType: commerce_order_item
+bundle: webform
+mode: add_to_cart
+content:
+  quantity:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  unit_price: true

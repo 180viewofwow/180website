@@ -1,0 +1,26 @@
+uuid: 91effeeb-9eef-4d24-b9a0-1c354383bf12
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: 9YgOsFZsqWAvjaX5AT9zegbOlLAiKxf-GJQEI5Rg0vU
+id: builder_multipurpose_theme_account_menu
+theme: builder_multipurpose_theme
+region: usermenu
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

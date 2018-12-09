@@ -1,0 +1,23 @@
+uuid: 19882fbc-7da2-434c-82df-136fcf039daf
+langcode: en
+status: true
+dependencies:
+  module:
+    - forum
+  theme:
+    - builder_multipurpose_theme
+id: activeforumtopics_2
+theme: builder_multipurpose_theme
+region: bottom_second
+weight: 0
+provider: null
+plugin: forum_active_block
+settings:
+  id: forum_active_block
+  label: 'Active forum topics'
+  provider: forum
+  label_display: visible
+  properties:
+    administrative: '1'
+  block_count: 5
+visibility: {  }

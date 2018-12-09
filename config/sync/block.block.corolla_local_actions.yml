@@ -1,0 +1,20 @@
+uuid: b4c09ab5-312d-43ce-8b87-f9b0a0fd0796
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corolla
+_core:
+  default_config_hash: VkG-tHykTw3UpZRjg0bryFfRC8ChcSjnQVAFqA1lWnQ
+id: corolla_local_actions
+theme: corolla
+region: features_first
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

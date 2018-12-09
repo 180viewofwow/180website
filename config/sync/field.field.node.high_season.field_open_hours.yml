@@ -1,0 +1,21 @@
+uuid: 88c4376f-5039-4edf-aaf4-7126ed0179c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours
+    - node.type.high_season
+  module:
+    - office_hours
+id: node.high_season.field_open_hours
+field_name: field_open_hours
+entity_type: node
+bundle: high_season
+label: 'Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

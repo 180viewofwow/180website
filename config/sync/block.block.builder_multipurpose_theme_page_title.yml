@@ -1,0 +1,20 @@
+uuid: 2c195ff4-d9cf-445f-9d89-908daec93936
+langcode: en
+status: true
+dependencies:
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: JnNOS4y7WzqlnZWfHsCwvmhETGqiyPqYQB2r0U5zLRM
+id: builder_multipurpose_theme_page_title
+theme: builder_multipurpose_theme
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

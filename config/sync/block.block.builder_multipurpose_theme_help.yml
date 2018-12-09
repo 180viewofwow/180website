@@ -1,0 +1,22 @@
+uuid: a02c2111-a62b-44c3-ae23-9ae8bc0b5b39
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: RFOKXsCTEo4pkduTkSQ2tgfE2tTbzBOxEr71AcRHC6M
+id: builder_multipurpose_theme_help
+theme: builder_multipurpose_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

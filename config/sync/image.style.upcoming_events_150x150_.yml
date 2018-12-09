@@ -1,0 +1,15 @@
+uuid: 34f0caf3-d64e-4825-a54f-40c1e3057fd9
+langcode: en
+status: true
+dependencies: {  }
+name: upcoming_events_150x150_
+label: 'Upcoming Events (150x150)'
+effects:
+  8fcde560-acda-4d79-a3ae-a42a7ff55db9:
+    uuid: 8fcde560-acda-4d79-a3ae-a42a7ff55db9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

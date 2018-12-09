@@ -1,0 +1,14 @@
+uuid: 1d34989e-98d5-40d7-bac2-64c2f0fa63f3
+name: '180 View of WOW!'
+mail: cdhmb1@gmail.com
+slogan: 'Your guide to planning and dreaming about your trip to Kona!'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

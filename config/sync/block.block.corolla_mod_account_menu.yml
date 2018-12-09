@@ -1,0 +1,41 @@
+uuid: 6b8e15c5-285a-45bd-9f5c-6f91d7cdc0bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+    - user
+  theme:
+    - corolla_mod
+_core:
+  default_config_hash: iGT87nMgv9bBxQsHs7gRaOLwqlewthRLPQTqIWiTP_o
+id: corolla_mod_account_menu
+theme: corolla_mod
+region: leaderboard
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/user/register\r\n/user/account\r\n/user/password\r\n/user/login"
+    negate: true
+    context_mapping: {  }

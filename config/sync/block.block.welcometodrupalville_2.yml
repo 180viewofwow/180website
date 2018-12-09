@@ -1,0 +1,25 @@
+uuid: 5a051df6-2e34-452e-9f97-094eb93013d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fc6b2cff-e73f-4f4c-92be-ec07fadfcb3c'
+  module:
+    - block_content
+  theme:
+    - builder_multipurpose_theme
+id: welcometodrupalville_2
+theme: builder_multipurpose_theme
+region: homepagemessage
+weight: 0
+provider: null
+plugin: 'block_content:fc6b2cff-e73f-4f4c-92be-ec07fadfcb3c'
+settings:
+  id: 'block_content:fc6b2cff-e73f-4f4c-92be-ec07fadfcb3c'
+  label: 'Welcome to 180 View of WOW!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

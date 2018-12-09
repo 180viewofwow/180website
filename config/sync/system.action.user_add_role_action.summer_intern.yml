@@ -1,0 +1,14 @@
+uuid: ed504343-24de-4954-8d23-2d6ee5e7c551
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.summer_intern
+  module:
+    - user
+id: user_add_role_action.summer_intern
+label: 'Add the Summer Intern role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: summer_intern

@@ -1,0 +1,22 @@
+uuid: b2a1d597-a843-4c87-902e-052b2551ec1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: 8B9V44DBdShSeyR7c875piFOc7pRwOF9NbXTyHoUdkM
+id: builder_multipurpose_theme_content
+theme: builder_multipurpose_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: c2b208cc-2d0b-4de9-a7a2-e7bdab8adcc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.bee
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+  module:
+    - commerce_order
+id: commerce_order_item.bee.add_to_cart
+targetEntityType: commerce_order_item
+bundle: bee
+mode: add_to_cart
+content:
+  purchased_entity:
+    type: entity_reference_autocomplete
+    weight: -1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      step: '1'
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  unit_price: true

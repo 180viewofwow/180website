@@ -1,0 +1,19 @@
+uuid: 640d9faf-eed9-4547-bae9-5f0d2e6fc0ad
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jYIZKg9FJFpS9ZKnIhoURB9dBwWzd3sB_-UN_7w4DOA
+name: 'Press releases'
+id: press_releases
+description: 'This is the press release.'
+format: plain
+priority: 0
+receipt: false
+from_name: '180 View of WOW!'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: cdhmb1@gmail.com
+hyperlinks: true
+new_account: none
+opt_inout: double
+weight: 0

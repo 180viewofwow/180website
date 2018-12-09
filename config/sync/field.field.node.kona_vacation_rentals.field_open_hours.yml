@@ -1,0 +1,21 @@
+uuid: 437cd762-cde8-4fd0-900a-15f149da3aab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_hours
+    - node.type.kona_vacation_rentals
+  module:
+    - office_hours
+id: node.kona_vacation_rentals.field_open_hours
+field_name: field_open_hours
+entity_type: node
+bundle: kona_vacation_rentals
+label: 'Open Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

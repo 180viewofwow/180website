@@ -1,0 +1,24 @@
+uuid: 1582521c-7d86-4656-95b3-871856a16766
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simplenews_issue
+  module:
+    - text
+_core:
+  default_config_hash: WmXguLYedqjDlEM-2yau5wACNAMvrbCVHXQUn4GQEDA
+id: node.simplenews_issue.body
+field_name: body
+entity_type: node
+bundle: simplenews_issue
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

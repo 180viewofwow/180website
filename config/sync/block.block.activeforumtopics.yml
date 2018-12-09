@@ -1,0 +1,23 @@
+uuid: 851af19f-f168-426d-a106-7fe583e2d268
+langcode: en
+status: true
+dependencies:
+  module:
+    - forum
+  theme:
+    - builder_multipurpose_theme
+id: activeforumtopics
+theme: builder_multipurpose_theme
+region: testimonials
+weight: 0
+provider: null
+plugin: forum_active_block
+settings:
+  id: forum_active_block
+  label: 'Active forum topics'
+  provider: forum
+  label_display: visible
+  properties:
+    administrative: '1'
+  block_count: 5
+visibility: {  }

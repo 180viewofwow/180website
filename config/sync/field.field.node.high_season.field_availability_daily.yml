@@ -1,0 +1,21 @@
+uuid: 36cfbe06-4229-444f-8100-98469936a847
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_availability_daily
+    - node.type.high_season
+id: node.high_season.field_availability_daily
+field_name: field_availability_daily
+entity_type: node
+bundle: high_season
+label: Availability
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:bat_unit'
+  handler_settings: {  }
+field_type: entity_reference

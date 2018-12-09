@@ -1,0 +1,24 @@
+uuid: d4686ac8-8bc4-4501-ba26-444a08ea534a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_events_added
+  module:
+    - views
+  theme:
+    - builder_multipurpose_theme
+id: views_block__recent_events_added_block_1_3
+theme: builder_multipurpose_theme
+region: bottom_forth
+weight: 0
+provider: null
+plugin: 'views_block:recent_events_added-block_1'
+settings:
+  id: 'views_block:recent_events_added-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

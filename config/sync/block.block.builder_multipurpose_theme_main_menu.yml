@@ -1,0 +1,26 @@
+uuid: 0dfdf849-3811-4530-9fc7-2b375330aa3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: c2Sf6tFBitLGhS-AFri9kydSPEV_bTgodzCAI1j5vjc
+id: builder_multipurpose_theme_main_menu
+theme: builder_multipurpose_theme
+region: primary_menu
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

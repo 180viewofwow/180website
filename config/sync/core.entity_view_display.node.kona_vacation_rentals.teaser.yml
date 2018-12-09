@@ -1,0 +1,30 @@
+uuid: e572ee66-6f47-4490-970e-3538b9dfe6dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.kona_vacation_rentals.body
+    - node.type.kona_vacation_rentals
+  module:
+    - text
+    - user
+id: node.kona_vacation_rentals.teaser
+targetEntityType: node
+bundle: kona_vacation_rentals
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

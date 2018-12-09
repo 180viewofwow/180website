@@ -1,0 +1,22 @@
+uuid: dac3a1f5-7ee3-4d33-99e5-38099de5e906
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corolla
+_core:
+  default_config_hash: vx49KU88-Bn5YUBIrOt3o5DTukDBtAHdmhn6MnAswIk
+id: corolla_messages
+theme: corolla
+region: highlighted
+weight: -100
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

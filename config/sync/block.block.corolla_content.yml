@@ -1,0 +1,22 @@
+uuid: fbf95d33-87c9-4a49-a211-bdb580d4f908
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corolla
+_core:
+  default_config_hash: V70Mtx0Q3dUJn_fER_aZHtWsgzRSJiIdS_ZYBMJYzEc
+id: corolla_content
+theme: corolla
+region: sidebar_first
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

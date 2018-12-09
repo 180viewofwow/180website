@@ -1,0 +1,21 @@
+uuid: 384d1a21-4380-4fa2-8560-d3f6bc762287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_frequency
+    - node.type.high_season
+  module:
+    - options
+id: node.high_season.field_price_frequency
+field_name: field_price_frequency
+entity_type: node
+bundle: high_season
+label: 'Price frequency'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

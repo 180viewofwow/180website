@@ -1,0 +1,26 @@
+uuid: 088210e9-9bd7-48a1-a3fa-3f8b313f3c3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - corolla
+_core:
+  default_config_hash: vBV2NTG0nS47bTVStmn2j4LIoMchHp9B0Nfsr74ErHg
+id: corolla_main_menu
+theme: corolla
+region: navbar
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  provider: system
+  label_display: '1'
+  level: 1
+  depth: 0
+visibility: {  }

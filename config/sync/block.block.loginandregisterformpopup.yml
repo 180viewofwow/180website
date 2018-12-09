@@ -1,0 +1,20 @@
+uuid: ea11ea4a-3918-4f58-b930-a38c4d3461b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - login_popup
+  theme:
+    - builder_multipurpose_theme
+id: loginandregisterformpopup
+theme: builder_multipurpose_theme
+region: usermenu
+weight: 0
+provider: null
+plugin: login_register_form_popup
+settings:
+  id: login_register_form_popup
+  label: 'Login And Register Form popup'
+  provider: login_popup
+  label_display: '0'
+visibility: {  }

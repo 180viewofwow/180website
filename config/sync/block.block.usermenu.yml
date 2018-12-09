@@ -1,0 +1,24 @@
+uuid: 5c5373c0-9995-44d4-b7ea-ac0632d327f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - builder_multipurpose_theme
+id: usermenu
+theme: builder_multipurpose_theme
+region: usermenu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

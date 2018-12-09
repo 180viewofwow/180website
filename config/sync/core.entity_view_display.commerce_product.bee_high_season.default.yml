@@ -1,0 +1,35 @@
+uuid: dc67dba3-6b24-4962-b51d-a8ab94faf78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.bee_high_season
+    - field.field.commerce_product.bee_high_season.stores
+    - field.field.commerce_product.bee_high_season.variations
+  module:
+    - commerce_product
+id: commerce_product.bee_high_season.default
+targetEntityType: commerce_product
+bundle: bee_high_season
+mode: default
+content:
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

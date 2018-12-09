@@ -1,0 +1,35 @@
+uuid: 1614b7a3-59d4-4f07-a121-c536299c8bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.bee_kona_vacation_rentals
+    - field.field.commerce_product.bee_kona_vacation_rentals.stores
+    - field.field.commerce_product.bee_kona_vacation_rentals.variations
+  module:
+    - commerce_product
+id: commerce_product.bee_kona_vacation_rentals.default
+targetEntityType: commerce_product
+bundle: bee_kona_vacation_rentals
+mode: default
+content:
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

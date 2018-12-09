@@ -1,0 +1,81 @@
+uuid: b65e247c-7ccd-4cd8-9773-90e3d6501d7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events.body
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_logo
+    - field.field.node.events.field_event_sponsors
+    - field.field.node.events.field_event_topics
+    - field.field.node.events.field_event_website
+    - field.field.node.events.field_phone
+    - image.style.thumbnail
+    - node.type.events
+  module:
+    - datetime
+    - image
+    - link
+    - telephone
+    - text
+    - user
+id: node.events.teaser
+targetEntityType: node
+bundle: events
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 1
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    region: content
+  field_event_date:
+    type: datetime_custom
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'l, F jS, Y'
+    third_party_settings: {  }
+  field_event_logo:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  field_event_website:
+    type: link
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_link
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_sponsors: true
+  field_event_topics: true

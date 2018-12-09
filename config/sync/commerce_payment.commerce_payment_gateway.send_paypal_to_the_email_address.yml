@@ -1,0 +1,18 @@
+uuid: b4414592-cb6c-47e3-985d-de0238d0cd7e
+langcode: en
+status: true
+dependencies: {  }
+id: send_paypal_to_the_email_address
+label: 'Send Paypal to the Email Address'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: 'Please send your Paypal payment to "cdhmb1@gmail.com" ... we will contact you soon after receipt and provide full details of your Hualalai Villa stay.'
+    format: plain_text
+  display_label: 'Send Paypal to the Below Email Address'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

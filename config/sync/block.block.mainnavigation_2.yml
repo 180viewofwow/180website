@@ -1,0 +1,24 @@
+uuid: 189bcabb-0c2c-4fb1-a299-d7c58c453b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - builder_multipurpose_theme
+id: mainnavigation_2
+theme: builder_multipurpose_theme
+region: bottom_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

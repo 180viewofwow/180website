@@ -1,0 +1,10 @@
+uuid: 637231f0-92c8-42c7-8cec-46c559bc6d35
+langcode: en
+status: true
+dependencies: {  }
+id: demo_region_us_midwest_manager
+label: 'United States: Midwest: Manager'
+description: null
+type: demo_region_manager
+permissions:
+  - administer

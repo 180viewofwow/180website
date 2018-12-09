@@ -1,0 +1,22 @@
+uuid: b2bc228e-89cd-48f6-8a60-e322d3a18630
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pixture_reloaded
+_core:
+  default_config_hash: DveG_W-ebNr9-56mD-4d-NVhGZY-QJ7wDjYfuiUMKGE
+id: pixture_reloaded_local_tasks
+theme: pixture_reloaded
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

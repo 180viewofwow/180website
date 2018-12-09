@@ -1,0 +1,26 @@
+uuid: d72b6edd-e4b0-4ac6-b626-9576fce6f30f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - corolla
+_core:
+  default_config_hash: MR2XIVXu9Vdv0Csi-0lX0ziHqu52PQY3vmMNd8xSObw
+id: corolla_tools
+theme: corolla
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

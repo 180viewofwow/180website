@@ -1,0 +1,6 @@
+field_name: email_deleteme
+last_run: 0
+sanitized_value: sanitized@nodomain.com
+run_interval: 1440
+_core:
+  default_config_hash: 3ffnDWHl1NLnfTwsljmHF1DkBU0ajCWcjYRGIRqA7HA

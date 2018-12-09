@@ -1,0 +1,22 @@
+uuid: c5d7a0da-dc90-4828-a4de-c4ae37e26a2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tweme
+_core:
+  default_config_hash: zCj1Ss_aJsjrJFZQ_-E9k7TNdToG6QHwkvol0pCFBQ4
+id: tweme_content
+theme: tweme
+region: content
+weight: 3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

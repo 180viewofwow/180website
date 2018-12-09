@@ -1,0 +1,22 @@
+uuid: 17b8d08b-d423-45e6-80d6-f02b14789f37
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corolla_mod
+_core:
+  default_config_hash: FEUq6qZ75ClI8xiHANVkt_TrQ5n2gx06_SqZvqkNLuM
+id: corolla_mod_content
+theme: corolla_mod
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

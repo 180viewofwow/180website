@@ -1,0 +1,22 @@
+uuid: b5bbb515-8bdf-4f9d-a504-094b87bb1681
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corolla
+_core:
+  default_config_hash: OnpXpIDsEhq6ddCg45-LrnO2AaFVO7uI427OtVMOom8
+id: corolla_local_tasks
+theme: corolla
+region: features_first
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

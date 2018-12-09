@@ -1,0 +1,22 @@
+uuid: a1859240-b560-4f2b-a53f-e20b75e1c4f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - builder_multipurpose_theme
+_core:
+  default_config_hash: PoZvUJWqfuvUL1kVXTpXf9ZbzB8bCh0SXxYYhrlLwgI
+id: builder_multipurpose_theme_search
+theme: builder_multipurpose_theme
+region: search
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

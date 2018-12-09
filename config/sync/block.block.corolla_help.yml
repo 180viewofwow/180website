@@ -1,0 +1,22 @@
+uuid: 8dac3250-8133-448d-b891-53950dae1e30
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - corolla
+_core:
+  default_config_hash: xxY9aZRa2egS2lnKSwpEY2xKvwUinCUhH052Rtq060s
+id: corolla_help
+theme: corolla
+region: header_second
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

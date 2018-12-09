@@ -1,0 +1,15 @@
+uuid: acfb339b-760a-4d4a-9e62-4e77634d285d
+langcode: en
+status: true
+dependencies: {  }
+name: photo_gallery_of_event_logos
+label: 'Photo Gallery of Event Logos'
+effects:
+  d3b93e86-616a-4b84-b272-a688fabf3b80:
+    uuid: d3b93e86-616a-4b84-b272-a688fabf3b80
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

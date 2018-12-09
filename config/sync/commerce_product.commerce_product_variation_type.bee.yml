@@ -1,0 +1,10 @@
+uuid: bfb48f8a-51d1-456f-883d-4dc13baa577d
+langcode: en
+status: true
+dependencies: {  }
+id: bee
+label: BEE
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

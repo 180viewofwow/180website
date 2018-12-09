@@ -1,0 +1,19 @@
+uuid: 753cc0c8-c3bc-4a8c-ad45-2fd80dfdaf2f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OvpcF8WkJvMy_bU3NaRRJwq3u2EX9kmJtGInuhcMUyw
+name: 'Weekly content update'
+id: weekly_content_update
+description: 'Weekly content update newsletter.'
+format: plain
+priority: 0
+receipt: false
+from_name: '180 View of WOW!'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: cdhmb1@gmail.com
+hyperlinks: true
+new_account: none
+opt_inout: double
+weight: 0

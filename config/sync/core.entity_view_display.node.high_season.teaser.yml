@@ -1,0 +1,30 @@
+uuid: b59664a6-3dbf-4b1d-8891-59d60d79811c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.high_season.body
+    - node.type.high_season
+  module:
+    - text
+    - user
+id: node.high_season.teaser
+targetEntityType: node
+bundle: high_season
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

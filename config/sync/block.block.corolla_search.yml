@@ -1,0 +1,22 @@
+uuid: 6afcbac9-28c6-4f13-baf1-e04ab1855264
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - corolla
+_core:
+  default_config_hash: 8fNTntHT2f8Lhl-q3bHZFpp82NGXH6YfAliJm72YAso
+id: corolla_search
+theme: corolla
+region: content
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }

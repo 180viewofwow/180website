@@ -1,0 +1,24 @@
+uuid: fe922985-0821-462d-aa63-9f79adb540c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.bee_high_season
+    - field.storage.node.field_product
+    - node.type.high_season
+id: node.high_season.field_product
+field_name: field_product
+entity_type: node
+bundle: high_season
+label: Product
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      bee_high_season: bee_high_season
+field_type: entity_reference

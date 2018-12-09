@@ -1,0 +1,69 @@
+uuid: e0b814da-d9c3-414e-88c4-da2daf4ab535
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.high_season.body
+    - field.field.node.high_season.field_availability_daily
+    - field.field.node.high_season.field_open_hours
+    - field.field.node.high_season.field_use_open_hours
+    - node.type.high_season
+  module:
+    - office_hours
+    - text
+    - user
+id: node.high_season.default
+targetEntityType: node
+bundle: high_season
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_availability_daily:
+    type: entity_reference_entity_view
+    region: content
+    label: above
+    settings:
+      view_mode: daily_calendar
+      link: false
+    weight: 103
+    third_party_settings: {  }
+  field_open_hours:
+    type: office_hours_table
+    region: content
+    label: above
+    settings:
+      day_format: long
+      time_format: G
+      compress: false
+      grouped: false
+      show_closed: all
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      schema:
+        enabled: false
+      timezone_field: ''
+      office_hours_first_day: ''
+    weight: 102
+    third_party_settings: {  }
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_use_open_hours: true

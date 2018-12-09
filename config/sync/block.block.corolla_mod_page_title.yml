@@ -1,0 +1,27 @@
+uuid: 907c16f3-4e8c-472c-af92-2b8c5a218fa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corolla_mod
+_core:
+  default_config_hash: vMZUrGFrHMe2T6dEhksw16pk3eZCUX4hsRPysQbAQMA
+id: corolla_mod_page_title
+theme: corolla_mod
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/*\r\n/user/*\r\n<front>"
+    negate: true
+    context_mapping: {  }

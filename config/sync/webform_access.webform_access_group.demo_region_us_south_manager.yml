@@ -1,0 +1,10 @@
+uuid: 3ba52c43-f1a1-4af8-8c12-0ba93e3b916b
+langcode: en
+status: true
+dependencies: {  }
+id: demo_region_us_south_manager
+label: 'United States: South: Manager'
+description: null
+type: demo_region_manager
+permissions:
+  - administer

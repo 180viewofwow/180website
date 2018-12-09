@@ -1,0 +1,22 @@
+uuid: 8f9ae2b5-d010-4af7-a8b4-cd9690373d17
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - pixture_reloaded
+_core:
+  default_config_hash: U8Z0AUk0K_OzH0r3iOO0ZvXpCsHsCpaKUKPqy2d3zUM
+id: pixture_reloaded_search
+theme: pixture_reloaded
+region: sidebar_second
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }
