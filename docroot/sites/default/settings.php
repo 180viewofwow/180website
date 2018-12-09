@@ -251,7 +251,8 @@ $databases = [];
  *   );
  * @endcode
  */
-$config_directories = [];
+
+$config_directories['sync'] =  '../config/sync';
 
 /**
  * Settings:
@@ -280,7 +281,8 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = file_get_contents('../config/salt.txt');
+//$settings['hash_salt'] = 'whatever I want to put in here';
 
 /**
  * Deployment identifier.
