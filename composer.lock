@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5da0df392566ec98c872e89f517eb82c",
+    "content-hash": "123f7e2d3dd4ebc9088ab0e346fd575f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -72,10 +72,10 @@
         },
         {
             "name": "algolia/places",
-            "version": "1.10.0",
+            "version": "1.13.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/places.js/-/places.js-1.10.0.tgz",
+                "url": "https://registry.npmjs.org/places.js/-/places.js-1.13.0.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -307,10 +307,10 @@
         },
         {
             "name": "codemirror/codemirror",
-            "version": "5.40.0",
+            "version": "5.41.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/components/codemirror/archive/5.40.0.zip",
+                "url": "https://github.com/components/codemirror/archive/5.41.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -741,16 +741,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "288593672a8ca9ead2c73a8bfbfa4737862bfd6a"
+                "reference": "5cbb8c320e0d3d2e6905374d56dc3610b7443f7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/288593672a8ca9ead2c73a8bfbfa4737862bfd6a",
-                "reference": "288593672a8ca9ead2c73a8bfbfa4737862bfd6a",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/5cbb8c320e0d3d2e6905374d56dc3610b7443f7b",
+                "reference": "5cbb8c320e0d3d2e6905374d56dc3610b7443f7b",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2018-12-14T01:52:35+00:00"
+            "time": "2018-12-21T03:50:15+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -2739,7 +2739,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.11",
-                    "datestamp": "1541002980",
+                    "datestamp": "1541003139",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7947,6 +7947,23 @@
             }
         },
         {
+            "name": "jquery/icheck",
+            "version": "1.0.2 ",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.icheck"
+            }
+        },
+        {
             "name": "jquery/image-picker",
             "version": "0.3.0",
             "dist": {
@@ -7965,10 +7982,10 @@
         },
         {
             "name": "jquery/inputmask",
-            "version": "4.0.0",
+            "version": "4.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.0.zip",
+                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -7982,10 +7999,10 @@
         },
         {
             "name": "jquery/intl-tel-input",
-            "version": "13.0.0",
+            "version": "14.0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jackocnr/intl-tel-input/archive/v13.0.0.zip",
+                "url": "https://github.com/jackocnr/intl-tel-input/archive/v14.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -8050,10 +8067,10 @@
         },
         {
             "name": "jquery/timepicker",
-            "version": "1.11.13",
+            "version": "1.11.14",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.13.zip",
+                "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -8063,6 +8080,23 @@
             "type": "drupal-library",
             "extra": {
                 "installer-name": "jquery.timepicker"
+            }
+        },
+        {
+            "name": "jquery/toggles",
+            "version": "4.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "jquery.toggles"
             }
         },
         {
