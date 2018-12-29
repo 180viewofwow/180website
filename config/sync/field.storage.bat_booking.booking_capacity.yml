@@ -1,19 +1,19 @@
-uuid: 7c9cd93f-98e9-430c-a65f-6045dbff01c9
+uuid: cc39bd60-f338-4602-ad0b-17bed1792078
 langcode: en
 status: true
 dependencies:
   module:
     - bat_booking
-    - bat_event
-id: bat_booking.booking_event_reference
-field_name: booking_event_reference
+id: bat_booking.booking_capacity
+field_name: booking_capacity
 entity_type: bat_booking
-type: entity_reference
+type: integer
 settings:
-  target_type: bat_event
+  unsigned: true
+  size: normal
 module: core
 locked: true
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,13 @@
+uuid: b20d5bab-b7cf-47eb-9f67-50d2cf4dbd04
+langcode: en
+status: true
+dependencies: {  }
+id: wowsite_db
+label: 'Wowsite DB'
+type: MySQL
+config:
+  host: 'http://default'
+  database: wowsitedev_dev
+  username: drupaluser
+  password: ''
+  port: '33067'

@@ -1,12 +1,9 @@
-uuid: 8a573f7e-96f3-4d23-86fa-81770c2d466d
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_example_remote_post
-_core:
-  default_config_hash: Tqok-UuJX4eOs8KAI5z5kCexYHbIS592vS2a9OsI_lM
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,6 +164,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   remote_post:
     id: remote_post
@@ -212,3 +214,6 @@ handlers:
       converted_custom_data: ''
       message: ''
       messages: {  }
+uuid: 8a573f7e-96f3-4d23-86fa-81770c2d466d
+_core:
+  default_config_hash: Tqok-UuJX4eOs8KAI5z5kCexYHbIS592vS2a9OsI_lM

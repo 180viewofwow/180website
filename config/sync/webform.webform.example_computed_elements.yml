@@ -1,12 +1,9 @@
-uuid: 2247f7fc-334b-4321-a9df-5d8284a88d7b
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
-_core:
-  default_config_hash: DTuZGUufl6EBRNweDSqFg1DGWd0O9LCaAnNgGhcNzA4
 open: null
 close: null
 weight: 0
@@ -17,7 +14,7 @@ id: example_computed_elements
 title: 'Example: Computed'
 description: 'Examples of a computed elements.'
 category: Example
-elements: "calculation:\n  '#title': Calculation\n  '#type': webform_wizard_page\n  '#open': true\n  calculation:\n    '#type': webform_section\n    '#title': 'Basic adding calculation using a ''computed twig'' element'\n    container:\n      '#type': container\n      '#attributes':\n        class:\n          - 'container-inline clearfix'\n      a:\n        '#type': number\n        '#title': a\n        '#title_display': invisible\n        '#placeholder': a\n      markup:\n        '#type': webform_markup\n        '#markup': ' + '\n      b:\n        '#type': number\n        '#title': b\n        '#title_display': invisible\n        '#placeholder': b\n      markup_01:\n        '#type': webform_markup\n        '#markup': ' = '\n      c:\n        '#type': webform_computed_twig\n        '#title': c\n        '#title_display': invisible\n        '#value': '{% if data.a|length and data.b|length %}{{ data.a + data.b }}{% else %}c{% endif %}'\n        '#ajax': true\n  message_warning:\n    '#type': webform_message\n    '#states':\n      visible:\n        ':input[name=\"c\"]':\n          value: c\n    '#message_type': warning\n    '#message_message': 'Please enter <strong>a</strong> and <strong>b</strong> to perform a basic adding calculation.'\n  message_status:\n    '#type': webform_message\n    '#message_message': 'Thank you for entering <strong>a</strong> and <strong>b</strong> to perform basic adding calculation.'\n    '#states':\n      visible:\n        ':input[name=\"c\"]':\n          '!value': c\ninformation:\n  '#title': 'Your Information'\n  '#type': webform_wizard_page\n  '#next_button_label': 'Preview >'\n  '#open': true\n  first_name:\n    '#type': textfield\n    '#title': 'First Name'\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n  date_of_birth:\n    '#type': date\n    '#title': 'Date of Birth'\n  color:\n    '#type': color\n    '#title': 'Favorite Color'\npreview:\n  '#title': Preview\n  '#type': webform_wizard_page\n  '#open': true\n  computed:\n    '#type': webform_computed_twig\n    '#title': 'Computed'\n    '#title_display': hidden\n    '#value': |\n      {% set attributes = create_attribute() %}\n      <h2{{ attributes.setAttribute('id', 'custom').setAttribute('style', 'color:' ~ data.color) }}>\n        Hello {{ data.first_name }} {{ data.last_name }}!!!\n      </h2>\n      <p>You are {{ ('now'|date('Y')) - (data.date_of_birth|date('Y'))  }} years old.</p>\n"
+elements: "calculation:\n  '#title': Calculation\n  '#type': webform_wizard_page\n  '#open': true\n  calculation:\n    '#type': webform_section\n    '#title': 'Basic adding calculation using a ''computed twig'' element'\n    container:\n      '#type': container\n      '#attributes':\n        class:\n          - 'container-inline clearfix'\n      a:\n        '#type': number\n        '#title': a\n        '#title_display': invisible\n        '#placeholder': a\n      markup:\n        '#type': webform_markup\n        '#markup': ' + '\n      b:\n        '#type': number\n        '#title': b\n        '#title_display': invisible\n        '#placeholder': b\n      markup_01:\n        '#type': webform_markup\n        '#markup': ' = '\n      c:\n        '#type': webform_computed_twig\n        '#title': c\n        '#title_display': invisible\n        '#ajax': true\n        '#template': '{% if data.a|length and data.b|length %}{{ data.a + data.b }}{% else %}c{% endif %}'\n  message_warning:\n    '#type': webform_message\n    '#states':\n      visible:\n        ':input[name=\"c\"]':\n          value: c\n    '#message_type': warning\n    '#message_message': 'Please enter <strong>a</strong> and <strong>b</strong> to perform a basic adding calculation.'\n  message_status:\n    '#type': webform_message\n    '#message_message': 'Thank you for entering <strong>a</strong> and <strong>b</strong> to perform basic adding calculation.'\n    '#states':\n      visible:\n        ':input[name=\"c\"]':\n          '!value': c\ninformation:\n  '#title': 'Your Information'\n  '#type': webform_wizard_page\n  '#next_button_label': 'Preview >'\n  '#open': true\n  first_name:\n    '#type': textfield\n    '#title': 'First Name'\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n  date_of_birth:\n    '#type': date\n    '#title': 'Date of Birth'\n  color:\n    '#type': color\n    '#title': 'Favorite Color'\npreview:\n  '#title': Preview\n  '#type': webform_wizard_page\n  '#open': true\n  computed:\n    '#type': webform_computed_twig\n    '#title': Computed\n    '#title_display': hidden\n    '#template': \"{% set attributes = create_attribute() %}\\n<h2{{ attributes.setAttribute('id', 'custom').setAttribute('style', 'color:' ~ data.color) }}>\\n  Hello {{ data.first_name }} {{ data.last_name }}!!!\\n</h2>\\n<p>You are {{ ('now'|date('Y')) - (data.date_of_birth|date('Y'))  }} years old.</p>\\n\"\n"
 css: ''
 javascript: ''
 settings:
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,4 +164,11 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers: {  }
+uuid: 2247f7fc-334b-4321-a9df-5d8284a88d7b
+_core:
+  default_config_hash: DTuZGUufl6EBRNweDSqFg1DGWd0O9LCaAnNgGhcNzA4

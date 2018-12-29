@@ -1,12 +1,9 @@
-uuid: c90463e4-90c4-4feb-93e7-6f4dba953596
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_demo_region_contact
-_core:
-  default_config_hash: 7Ky3XBal63ZsfCmoAt15-hACFK9tYDguibBh6-Y98zE
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,6 +164,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   employee_email:
     id: email
@@ -269,3 +271,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: c90463e4-90c4-4feb-93e7-6f4dba953596
+_core:
+  default_config_hash: 7Ky3XBal63ZsfCmoAt15-hACFK9tYDguibBh6-Y98zE

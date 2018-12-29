@@ -1,4 +1,3 @@
-uuid: 6d354ffe-d866-4631-aeae-1e492196e496
 langcode: en
 status: open
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
       - webform_demo_event_registration
   module:
     - webform_scheduled_email
-_core:
-  default_config_hash: gCbO1ap2TOl3_xA97yW-BCW1krfHlg4OR7uq81Qk9BE
 open: null
 close: null
 weight: 0
@@ -19,7 +16,7 @@ id: demo_event_registration
 title: 'Demo: Event Registration'
 description: 'A demonstration of an event registration form.'
 category: Demo
-elements: "event_information:\n  '#type': fieldset\n  '#title': 'Event Information'\n  event_title:\n    '#type': webform_computed_token\n    '#title': 'Event Title'\n    '#value': '[webform_submission:node:title]'\n  event_date:\n    '#type': webform_computed_token\n    '#title': 'Event Date'\n    '#value': '[webform_submission:node:field_webform_demo_event_date:date:short]'\ninformation:\n  '#title': 'Your Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
+elements: "event_information:\n  '#type': fieldset\n  '#title': 'Event Information'\n  event_title:\n    '#type': webform_computed_token\n    '#title': 'Event Title'\n    '#template': '[webform_submission:node:title]'\n  event_date:\n    '#type': webform_computed_token\n    '#title': 'Event Date'\n    '#template': '[webform_submission:node:field_webform_demo_event_date:date:short]'\ninformation:\n  '#title': 'Your Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  email:\n    '#type': email\n    '#title': Email\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
 css: ''
 javascript: ''
 settings:
@@ -36,6 +33,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -160,6 +158,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_notification:
     id: email
@@ -223,16 +225,17 @@ handlers:
       html: true
       attachments: false
       twig: false
-      theme_name: ''
       debug: false
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      theme_name: ''
       send: '[webform_submission:node:field_webform_demo_event_date:value]'
       days: -1
       unschedule: false
       ignore_past: false
+      test_send: false
   submission_limit:
     id: settings
     label: 'Submission limit'
@@ -248,3 +251,6 @@ handlers:
       confirmation_message: ''
       debug: ''
       entity_limit_total: '[webform_submission:node:field_webform_entity_limit_total]'
+uuid: 6d354ffe-d866-4631-aeae-1e492196e496
+_core:
+  default_config_hash: gCbO1ap2TOl3_xA97yW-BCW1krfHlg4OR7uq81Qk9BE

@@ -1,12 +1,9 @@
-uuid: 151f4745-808e-49e9-bd43-d419e3ea6a7b
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform_examples
-_core:
-  default_config_hash: _q3C3SVZj8RgtQuzGsfzToa6yi5VSPUQBKmhQZyXi-k
 open: null
 close: null
 weight: 0
@@ -34,6 +31,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -166,4 +164,11 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers: {  }
+uuid: 151f4745-808e-49e9-bd43-d419e3ea6a7b
+_core:
+  default_config_hash: _q3C3SVZj8RgtQuzGsfzToa6yi5VSPUQBKmhQZyXi-k
