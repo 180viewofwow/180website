@@ -55,8 +55,6 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   encrypt: 0
@@ -90,7 +88,6 @@ module:
   inline_form_errors: 0
   insert_view: 0
   key: 0
-  kint: 0
   language: 0
   layout_discovery: 0
   link: 0
@@ -160,7 +157,6 @@ module:
   webform_demo_application_evaluation: 0
   webform_demo_event_registration: 0
   webform_demo_region_contact: 0
-  webform_devel: 0
   webform_encrypt: 0
   webform_example_composite: 0
   webform_example_element: 0
@@ -190,7 +186,6 @@ module:
   webform_ui: 0
   webform_views: 0
   webform_wizard_full_title: 0
-  webprofiler: 0
   workflows: 0
   forum: 1
   menu_link_content: 1
